@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <div id="maze_container">
+        <!-- insert the maze HTML code here -->
+    </div>
+    <div id="maze_output">
+        <div id="maze_score">
+            <!-- -->
+        </div>
+        <div id="maze_message">
+            <!-- -->
+        </div>
+    </div>
+
+    <script src="./maze.tmpl.js"></script>
+    <script src="./mazing.js"></script>
+    <script>
+
+        window.addEventListener("DOMContentLoaded", function (e) {
+            AddMaze();
+            var maze = new Mazing();
+            /*  maze.setChildMode(); */
+        }, false);
+
+    </script>
+
+</body>
+
+</html>
